@@ -12,14 +12,15 @@
 <hr>
 
 <body style="text-align:center;">  
-    <?php include '../includes/header.php'; ?>
   
     <h1>Consulta de Aluno</h1>
+    <?php include '../includes/header.php'; ?>
 
 
     <form action="" method="post">
         <label for="id">Digite o ID do aluno que você deseja visualizar: </label>
         <input type="number" name="id" id="id"><br>
+        <br>
         <br>
         <input type="submit" value="Consultar">
     </form>
