@@ -81,5 +81,34 @@ function atualizar($conexao,$id,$nome,$turma,$nasc,$ativo) {
     $stmt->execute();
 
 }
+
+// Funções para sistema de login
+    function cadastrar_user($conexao, $email, $senha) 
+{
+    $sql = "INSERT INTO usuario (email,senha) VALUES (:email,:senha)";
+    $stmt = $conexao->prepare($sql);
+    $stmt->bindParam(":email",$email);
+    $stmt->bindParam(":senha",$senha);
+
+    $stmt->execute();
+    echo "Usuário Cadastrado com Sucesso!";
+}
+
+function consulta_user($conexao, $email){
+
+    $sql = "SELECT id, email, senha
+            FROM usuario
+            WHERE email = :email";
+
+    $stmt = $conexao->prepare($sql);
+    $stmt-> bindParam(":email", $email);
+    $stmt->execute();
+
+    $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    return $usuario;
+}
+
+
     ?>
 
