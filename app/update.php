@@ -10,9 +10,9 @@
 
 </head>
 <body style="text-align:center;">
-    <?php include '../includes/header.php'; ?>
 
     <h1>Atualizar Informações</h1>
+    <?php include '../includes/header.php'; ?>
     
 
     <form action="" method="post">
