@@ -15,3 +15,15 @@
 
 5. Atualizar aluno:
 - Atualizar um cadastro a partir de um ID.
+
+
+### Login
+RF:
+1. Cadastrar usuário.
+
+2. Página de login.
+
+3. Página logout.
+
+4. Fazer verificação de usuário logado.
+
