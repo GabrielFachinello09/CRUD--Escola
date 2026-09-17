@@ -8,6 +8,8 @@
         <a href="../app/select.php">Relatório</a>
         <a href="../app/select_w.php">Aluno</a>
         <a href="../app/update.php">Atualizar</a>
+        <a href="../login/cadastrar.php">Login</a>
+
     </nav>
     <br>
 </header>
