@@ -1,5 +1,5 @@
-<?php require_once '../includes/functions.php';
-require_once '../login/verifica_user.php';
+<?php require_once __DIR__ . '/../includes/functions.php';
+require_once __DIR__ . '/../login/verifica_user.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once '../login/verifica_user.php';
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Consulta de Aluno</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="/mini_sistema/css/style.css">
 
 </head>
 <hr>
@@ -16,7 +16,7 @@ require_once '../login/verifica_user.php';
 <body style="text-align:center;">  
   
     <h1>Consulta de Aluno</h1>
-    <?php include '../includes/header.php'; ?>
+    <?php include __DIR__ . '/../includes/header.php'; ?>
 
 
     <form action="" method="post">
@@ -31,7 +31,7 @@ require_once '../login/verifica_user.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         consultar($conexao, $_POST['id']);
     }
-    include '../includes/footer.php';
+    include __DIR__ . '/../includes/footer.php';
 ?>
 </body>
 </html>

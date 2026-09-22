@@ -1,5 +1,5 @@
-<?php require_once '../includes/functions.php';
-require_once '../login/verifica_user.php';
+<?php require_once __DIR__ . '/../includes/functions.php';
+require_once __DIR__ . '/../login/verifica_user.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,13 +8,13 @@ require_once '../login/verifica_user.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/mini_sistema/css/style.css">
 
 </head>
 <body style="text-align:center;">
     <br>
     <h1>Deletar Usuário</h1>
-    <?php include '../includes/header.php'; ?>
+    <?php include __DIR__ . '/../includes/header.php'; ?>
 
     <form action="" method="post">
         <label for="id">ID: </label>
@@ -26,12 +26,9 @@ require_once '../login/verifica_user.php';
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         deletar($conexao, $_POST['id']);
     }
-    include '../includes/footer.php'; 
+    include __DIR__ . '/../includes/footer.php'; 
     ?>
-    
-  
     <br>
-    
 </body>
 </html>
 

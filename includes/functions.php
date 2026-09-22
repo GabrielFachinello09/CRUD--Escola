@@ -1,5 +1,5 @@
 <?php
-require_once '../database/connect.php';
+require_once __DIR__ . '/../database/connect.php';
 
 function cadastrar($conexao, $nome, $nasc, $turma, $ativo) 
 {
@@ -16,7 +16,6 @@ function cadastrar($conexao, $nome, $nasc, $turma, $ativo)
 
 function deletar($conexao, $id) 
 {
-    require_once '../database/connect.php';
 
     if ($_SERVER['REQUEST_METHOD'] == "POST"){
 
@@ -33,7 +32,6 @@ function deletar($conexao, $id)
 }
 
 function listar($conexao) {
-    require_once '../database/connect.php';
 
             $sql = "SELECT * FROM alunos LIMIT 10";
 

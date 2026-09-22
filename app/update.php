@@ -1,5 +1,5 @@
-<?php require_once '../includes/functions.php';
-require_once '../login/verifica_user.php';
+<?php require_once __DIR__ . '/../includes/functions.php';
+require_once __DIR__ . '/../login/verifica_user.php';
 ?> 
 
 <!DOCTYPE html>
@@ -8,13 +8,13 @@ require_once '../login/verifica_user.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/mini_sistema/css/style.css">
 
 </head>
 <body style="text-align:center;">
 
     <h1>Atualizar Informações</h1>
-    <?php include '../includes/header.php'; ?>
+    <?php include __DIR__ . '/../includes/header.php'; ?>
     
 
     <form action="" method="post">
@@ -47,7 +47,7 @@ require_once '../login/verifica_user.php';
         atualizar($conexao, $_POST['id'], $_POST['nome'], $_POST['turma'], $_POST['nasc'], $_POST['ativo']);
     }
 
-    include '../includes/footer.php'; 
+    include __DIR__ . '/../includes/footer.php'; 
     ?>
 </body>
 </html>
